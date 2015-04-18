@@ -1,0 +1,32 @@
+p{
+	color: teal;
+	text-align: center;	
+}
+h1{
+	color: teal;
+	text-align: center;	
+}
+p.RM{
+	text-align: left;
+	width: 500px;
+	padding-left: 50px;
+	background-color: white;
+	
+}
+input{
+	float: right;
+	height: 50px;
+	padding-right: 80px;
+	width: 500px;
+	
+}
+body{
+	background-image: url("image.png");
+}
+
+#submit{
+	background-color: pink;
+	width: 1300px;
+	text-size: 12pt;
+	text-align: center;
+}
