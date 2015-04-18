@@ -3,7 +3,7 @@
 <html lang='en'>
 <head><meta charset="UTF-8">
 <title>Personality Test</title>
-<link rel="stylesheet" type="text/css" href="Personality.css"/>
+<link rel="stylesheet" type="text/css" href="Personality.css"/><script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body><h1>Personality Test</h1>
 <p>Please fill in the questions below in complete sentences.</p>
@@ -22,50 +22,56 @@ Awesome! Isn’t this exciting? Roommates are an integral part of your college e
 Living with another person can be a rewarding experience, in general would you say you get along well with others?
 </br>
 </p>
-<input type="text" name="q3" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q3" class='questions' id="q3" size="50"/> </br>
 <p class='RM'>
 Many people get different things out of living with a new roommate, would you like to be best friends? Or maybe just friendly?
 </br>
 </p>
-<input type="text" name="q4" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q4" class='questions' id="q4" size="50"/> </br>
 <p class='RM'>
 Even so, whether or not you’re friends with your roommate means nothing without keeping up with your academics! What kind of student are you?
 </br>
 </p>
-<input type="text" name="q5" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q5" class='questions' id="q5" size="50"/> </br>
 <p class='RM'>
 A room can be an important study space, do you like to study quietly in your room? Or blast the music and jam out?
 </br>
 </p>
-<input type="text" name="q6" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q6" class='questions' id="q6" size="50"/> </br>
 <p class='RM'>
 Though you’ll spend a lot of time in your room, going out is fun too! Are you a party animal or do you like to spend the weekends with close friends?
 </br>
 </p>
-<input type="text" name="q7" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q7" class='questions' id="q7" size="50"/> </br>
 <p class='RM'>
 You and your roommate might not always get along, do you feel as though you can work through problems together?
 </br>
 </p>
-<input type="text" name="q8" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q8" class='questions' id="q8" size="50"/> </br>
 <p class='RM'>
 You may need your roommate to be there for you on the hard days, would you like to be that close to your roommate or will you get your help elsewhere?
 </br>
 </p>
-<input type="text" name="q9" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q9" class='questions' id="q9" size="50"/> </br>
 <p class='RM'>
 Would you say you have a lot of hard days? School can be stressful even for the best of us.
 </br>
 </p>
-<input type="text" name="q10" class='questions' id="q2" size="50"/> </br>
+<input type="text" name="q10" class='questions' id="q10" size="50"/> </br>
 <p class='RM'>
 There are lots of resources at college to help you during those times, don’t be afraid to ask! College is also a really fun time! Are you looking forward to the experience?
 </br>
 </p>
-<input type="text" name="q11" class='questions' id="q2" size="50"/> </br>
-
-<input id="submit" align="left" type="submit" value="Submit">
-
+<input type="text" name="q11" class='questions' id="q11" size="50"/> </br>
+<input type="submit" value="submit" id="submit">
 </form>
+<script>
+
+var answers=q1.concat(q2,q3,q4,q5,q6,q7,q8,q9,q10,q11);
+$("RoomMe").submit(function(){
+    alert("answers"); return true;
+});
+</script>
+
 </body>
 </html>
